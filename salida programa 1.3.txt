@@ -1,0 +1,2291 @@
+C:\MPI\Proyecto_MPI>mpiexec -hosts 3 192.168.137.1 1 192.168.137.165 2 192.168.137.153 2 C:\MPI\Proyecto_MPI\practica1_3.exe
+EQUIPO: Hermosillo Prado Carlos | Montes de Oca del Risco Rafael Alejandro | Ramirez Andrade Uriel Ismael Guadalupe
+==============================================
+PRACTICA 1.3: REDUCE EN MPI CON OPENMP
+Procesos MPI: 5 | Hilos OpenMP por proceso: 8
+==============================================
+mpiexec aborting job...
+ERROR: Exceeded maximum number of retries, failing with error 1726.
+
+Aborting: ERROR: Exceeded maximum number of retries, failing with error 1726.
+mpiexec on CARLOSHP failed to communicate with smpd manager on 192.168.137.1
+ERROR: Exceeded maximum number of retries, failing with error 1726.
+
+C:\MPI\Proyecto_MPI>
+
+C:\MPI\Proyecto_MPI>mpiexec -hosts 3 192.168.137.1 1 192.168.137.165 2 192.168.137.153 2 C:\MPI\Proyecto_MPI\practica1_3.exe
+EQUIPO: Hermosillo Prado Carlos | Montes de Oca del Risco Rafael Alejandro | Ramirez Andrade Uriel Ismael Guadalupe
+==============================================
+PRACTICA 1.3: REDUCE EN MPI CON OPENMP
+Procesos MPI: 5 | Hilos OpenMP por proceso: 8
+==============================================
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 1
+
+1) N = 40 (muestra todo)
+2) N = 4,000,000 (solo tiempos)
+3) Otro tamano
+Seleccione (1-3): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+Seleccione una opcion:
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+6
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Llenado Secuencial] [Valor: A=1, B=2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Llenado Secuencial] [Valor: A=2, B=4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Llenado Secuencial] [Valor: A=8, B=16]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Llenado Secuencial] [Valor: A=5, B=10]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Llenado Secuencial] [Valor: A=6, B=12]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Llenado Secuencial] [Valor: A=4, B=8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Llenado Secuencial] [Valor: A=7, B=14]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Llenado Secuencial] [Valor: A=3, B=6]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Llenado Secuencial] [Valor: A=26, B=52]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Llenado Secuencial] [Valor: A=33, B=66]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Llenado Secuencial] [Valor: A=25, B=50]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Llenado Secuencial] [Valor: A=9, B=18]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Llenado Secuencial] [Valor: A=38, B=76]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Llenado Secuencial] [Valor: A=17, B=34]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Llenado Secuencial] [Valor: A=10, B=20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Llenado Secuencial] [Valor: A=18, B=36]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Llenado Secuencial] [Valor: A=11, B=22]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Llenado Secuencial] [Valor: A=28, B=56]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Llenado Secuencial] [Valor: A=34, B=68]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Llenado Secuencial] [Valor: A=29, B=58]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Llenado Secuencial] [Valor: A=35, B=70]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Llenado Secuencial] [Valor: A=27, B=54]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Llenado Secuencial] [Valor: A=37, B=74]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Llenado Secuencial] [Valor: A=30, B=60]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Llenado Secuencial] [Valor: A=19, B=38]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Llenado Secuencial] [Valor: A=12, B=24]
+[TIEMPO GLOBAL] Llenar Secuencial | N=40 | MPI_Wtime: 0.012929 s
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Llenado Secuencial] [Valor: A=20, B=40]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Llenado Secuencial] [Valor: A=13, B=26]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Llenado Secuencial] [Valor: A=36, B=72]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Llenado Secuencial] [Valor: A=31, B=62]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Llenado Secuencial] [Valor: A=23, B=46]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Llenado Secuencial] [Valor: A=39, B=78]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Llenado Secuencial] [Valor: A=14, B=28]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Llenado Secuencial] [Valor: A=21, B=42]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Llenado Secuencial] [Valor: A=15, B=30]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Llenado Secuencial] [Valor: A=24, B=48]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Llenado Secuencial] [Valor: A=32, B=64]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Llenado Secuencial] [Valor: A=16, B=32]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Llenado Secuencial] [Valor: A=22, B=44]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Llenado Secuencial] [Valor: A=40, B=80]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 2
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Suma] [Valor: C=3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Suma] [Valor: C=18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Suma] [Valor: C=9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Suma] [Valor: C=24]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Suma] [Valor: C=6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Suma] [Valor: C=15]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Suma] [Valor: C=21]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Suma] [Valor: C=12]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Suma] [Valor: C=75]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Suma] [Valor: C=117]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Suma] [Valor: C=81]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Suma] [Valor: C=108]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Suma] [Valor: C=93]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Suma] [Valor: C=27]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Suma] [Valor: C=105]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Suma] [Valor: C=84]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Suma] [Valor: C=120]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Suma] [Valor: C=69]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Suma] [Valor: C=78]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Suma] [Valor: C=33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Suma] [Valor: C=102]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Suma] [Valor: C=72]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Suma] [Valor: C=36]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Suma] [Valor: C=63]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Suma] [Valor: C=39]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Suma] [Valor: C=57]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Suma] [Valor: C=30]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Suma] [Valor: C=66]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Suma] [Valor: C=45]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Suma] [Valor: C=60]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Suma] [Valor: C=42]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Suma] [Valor: C=51]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Suma] [Valor: C=48]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Suma] [Valor: C=54]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Suma] [Valor: C=96]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Suma] [Valor: C=111]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Suma] [Valor: C=90]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Suma] [Valor: C=114]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Suma] [Valor: C=87]
+[TIEMPO GLOBAL] Suma | N=40 | MPI_Wtime: 0.020591 s
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Suma] [Valor: C=99]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 2
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Maestro genera A y B globales] [Valor: secuencial]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 8-15] [Operacion: MPI_Send bloque A y B hacia nodo 1] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 16-23] [Operacion: MPI_Send bloque A y B hacia nodo 2] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 24-31] [Operacion: MPI_Send bloque A y B hacia nodo 3] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 32-39] [Operacion: MPI_Send bloque A y B hacia nodo 4] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Suma] [Valor: C=3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Suma] [Valor: C=15]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Suma] [Valor: C=12]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Suma] [Valor: C=21]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Suma] [Valor: C=6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Suma] [Valor: C=18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Suma] [Valor: C=24]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Suma] [Valor: C=9]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Suma] [Valor: C=75]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Suma] [Valor: C=99]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Suma] [Valor: C=78]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Suma] [Valor: C=102]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Suma] [Valor: C=27]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Suma] [Valor: C=51]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Suma] [Valor: C=90]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Suma] [Valor: C=120]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Suma] [Valor: C=84]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Suma] [Valor: C=30]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Suma] [Valor: C=54]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Suma] [Valor: C=45]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Suma] [Valor: C=57]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Suma] [Valor: C=39]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Suma] [Valor: C=69]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Suma] [Valor: C=33]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Suma] [Valor: C=63]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Suma] [Valor: C=36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Suma] [Valor: C=105]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Suma] [Valor: C=60]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Suma] [Valor: C=48]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Suma] [Valor: C=66]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Suma] [Valor: C=72]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Suma] [Valor: C=42]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Suma] [Valor: C=93]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Suma] [Valor: C=111]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Suma] [Valor: C=87]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Suma] [Valor: C=114]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Suma] [Valor: C=81]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Suma] [Valor: C=108]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Suma] [Valor: C=96]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Suma] [Valor: C=117]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 8-15] [Operacion: MPI_Recv parcial de C desde nodo 1] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 16-23] [Operacion: MPI_Recv parcial de C desde nodo 2] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 24-31] [Operacion: MPI_Recv parcial de C desde nodo 3] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 32-39] [Operacion: MPI_Recv parcial de C desde nodo 4] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: C global recibido en maestro] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 1] [Operacion: C global recibido en maestro] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 2] [Operacion: C global recibido en maestro] [Valor: 9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 3] [Operacion: C global recibido en maestro] [Valor: 12]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 4] [Operacion: C global recibido en maestro] [Valor: 15]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 5] [Operacion: C global recibido en maestro] [Valor: 18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 6] [Operacion: C global recibido en maestro] [Valor: 21]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 7] [Operacion: C global recibido en maestro] [Valor: 24]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: C global recibido en maestro] [Valor: 27]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: C global recibido en maestro] [Valor: 30]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 10] [Operacion: C global recibido en maestro] [Valor: 33]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 11] [Operacion: C global recibido en maestro] [Valor: 36]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 12] [Operacion: C global recibido en maestro] [Valor: 39]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 13] [Operacion: C global recibido en maestro] [Valor: 42]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 14] [Operacion: C global recibido en maestro] [Valor: 45]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 15] [Operacion: C global recibido en maestro] [Valor: 48]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: C global recibido en maestro] [Valor: 51]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: C global recibido en maestro] [Valor: 54]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 18] [Operacion: C global recibido en maestro] [Valor: 57]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 19] [Operacion: C global recibido en maestro] [Valor: 60]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 20] [Operacion: C global recibido en maestro] [Valor: 63]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 21] [Operacion: C global recibido en maestro] [Valor: 66]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 22] [Operacion: C global recibido en maestro] [Valor: 69]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 23] [Operacion: C global recibido en maestro] [Valor: 72]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: C global recibido en maestro] [Valor: 75]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 25] [Operacion: C global recibido en maestro] [Valor: 78]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 26] [Operacion: C global recibido en maestro] [Valor: 81]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 27] [Operacion: C global recibido en maestro] [Valor: 84]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 28] [Operacion: C global recibido en maestro] [Valor: 87]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 29] [Operacion: C global recibido en maestro] [Valor: 90]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 30] [Operacion: C global recibido en maestro] [Valor: 93]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 31] [Operacion: C global recibido en maestro] [Valor: 96]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: C global recibido en maestro] [Valor: 99]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 33] [Operacion: C global recibido en maestro] [Valor: 102]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 34] [Operacion: C global recibido en maestro] [Valor: 105]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 35] [Operacion: C global recibido en maestro] [Valor: 108]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 36] [Operacion: C global recibido en maestro] [Valor: 111]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 37] [Operacion: C global recibido en maestro] [Valor: 114]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 38] [Operacion: C global recibido en maestro] [Valor: 117]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 39] [Operacion: C global recibido en maestro] [Valor: 120]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Suma de verificacion de C global] [Valor: 2460]
+[TIEMPO GLOBAL] Suma [Send/Recv] | N=40 | MPI_Wtime: 5.779732 s
+[TIEMPO COMUNICACION] Distribucion: 5.437250 s | Recopilacion: 0.007581 s | Total: 5.444832 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 2
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 3
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Maestro genera A y B globales] [Valor: secuencial]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Suma] [Valor: C=3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Suma] [Valor: C=15]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Suma] [Valor: C=12]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Suma] [Valor: C=18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Suma] [Valor: C=24]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Suma] [Valor: C=9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Suma] [Valor: C=21]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Suma] [Valor: C=6]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Suma] [Valor: C=75]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Suma] [Valor: C=99]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Suma] [Valor: C=78]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Suma] [Valor: C=27]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Suma] [Valor: C=51]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Suma] [Valor: C=30]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Suma] [Valor: C=54]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Suma] [Valor: C=45]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Suma] [Valor: C=102]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Suma] [Valor: C=90]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Suma] [Valor: C=111]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Suma] [Valor: C=87]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Suma] [Valor: C=105]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Suma] [Valor: C=81]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Suma] [Valor: C=114]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Suma] [Valor: C=96]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Suma] [Valor: C=108]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Suma] [Valor: C=84]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Suma] [Valor: C=120]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Suma] [Valor: C=93]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Suma] [Valor: C=117]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Suma] [Valor: C=57]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Suma] [Valor: C=33]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Suma] [Valor: C=63]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Suma] [Valor: C=66]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Suma] [Valor: C=60]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Suma] [Valor: C=36]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Suma] [Valor: C=69]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Suma] [Valor: C=72]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Suma] [Valor: C=48]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Suma] [Valor: C=39]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Suma] [Valor: C=42]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: C global recibido en maestro] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 1] [Operacion: C global recibido en maestro] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 2] [Operacion: C global recibido en maestro] [Valor: 9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 3] [Operacion: C global recibido en maestro] [Valor: 12]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 4] [Operacion: C global recibido en maestro] [Valor: 15]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 5] [Operacion: C global recibido en maestro] [Valor: 18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 6] [Operacion: C global recibido en maestro] [Valor: 21]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 7] [Operacion: C global recibido en maestro] [Valor: 24]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: C global recibido en maestro] [Valor: 27]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: C global recibido en maestro] [Valor: 30]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 10] [Operacion: C global recibido en maestro] [Valor: 33]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 11] [Operacion: C global recibido en maestro] [Valor: 36]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 12] [Operacion: C global recibido en maestro] [Valor: 39]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 13] [Operacion: C global recibido en maestro] [Valor: 42]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 14] [Operacion: C global recibido en maestro] [Valor: 45]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 15] [Operacion: C global recibido en maestro] [Valor: 48]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: C global recibido en maestro] [Valor: 51]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: C global recibido en maestro] [Valor: 54]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 18] [Operacion: C global recibido en maestro] [Valor: 57]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 19] [Operacion: C global recibido en maestro] [Valor: 60]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 20] [Operacion: C global recibido en maestro] [Valor: 63]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 21] [Operacion: C global recibido en maestro] [Valor: 66]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 22] [Operacion: C global recibido en maestro] [Valor: 69]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 23] [Operacion: C global recibido en maestro] [Valor: 72]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: C global recibido en maestro] [Valor: 75]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 25] [Operacion: C global recibido en maestro] [Valor: 78]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 26] [Operacion: C global recibido en maestro] [Valor: 81]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 27] [Operacion: C global recibido en maestro] [Valor: 84]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 28] [Operacion: C global recibido en maestro] [Valor: 87]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 29] [Operacion: C global recibido en maestro] [Valor: 90]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 30] [Operacion: C global recibido en maestro] [Valor: 93]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 31] [Operacion: C global recibido en maestro] [Valor: 96]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: C global recibido en maestro] [Valor: 99]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 33] [Operacion: C global recibido en maestro] [Valor: 102]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 34] [Operacion: C global recibido en maestro] [Valor: 105]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 35] [Operacion: C global recibido en maestro] [Valor: 108]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 36] [Operacion: C global recibido en maestro] [Valor: 111]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 37] [Operacion: C global recibido en maestro] [Valor: 114]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 38] [Operacion: C global recibido en maestro] [Valor: 117]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 39] [Operacion: C global recibido en maestro] [Valor: 120]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Suma de verificacion de C global] [Valor: 2460]
+[TIEMPO GLOBAL] Suma [Scatter/Gather] | N=40 | MPI_Wtime: 0.052621 s
+[TIEMPO COMUNICACION] Distribucion: 0.029980 s | Recopilacion: 0.004019 s | Total: 0.034000 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 3
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Maestro genera A y B globales] [Valor: secuencial]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 8-15] [Operacion: MPI_Send bloque A y B hacia nodo 1] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 16-23] [Operacion: MPI_Send bloque A y B hacia nodo 2] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 24-31] [Operacion: MPI_Send bloque A y B hacia nodo 3] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 32-39] [Operacion: MPI_Send bloque A y B hacia nodo 4] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Resta] [Valor: C=-1]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Resta] [Valor: C=-6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Resta] [Valor: C=-3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Resta] [Valor: C=-8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Resta] [Valor: C=-4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Resta] [Valor: C=-7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Resta] [Valor: C=-2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Resta] [Valor: C=-5]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Resta] [Valor: C=-25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Resta] [Valor: C=-33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Resta] [Valor: C=-31]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Resta] [Valor: C=-35]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Resta] [Valor: C=-27]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Resta] [Valor: C=-36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Resta] [Valor: C=-30]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Resta] [Valor: C=-39]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Resta] [Valor: C=-29]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Resta] [Valor: C=-40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Resta] [Valor: C=-32]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Resta] [Valor: C=-34]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Resta] [Valor: C=-9]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Resta] [Valor: C=-26]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Resta] [Valor: C=-37]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Resta] [Valor: C=-28]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Resta] [Valor: C=-38]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Resta] [Valor: C=-17]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Resta] [Valor: C=-10]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Resta] [Valor: C=-18]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Resta] [Valor: C=-21]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Resta] [Valor: C=-22]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Resta] [Valor: C=-11]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Resta] [Valor: C=-23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Resta] [Valor: C=-12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Resta] [Valor: C=-24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Resta] [Valor: C=-13]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Resta] [Valor: C=-19]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Resta] [Valor: C=-14]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Resta] [Valor: C=-20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Resta] [Valor: C=-15]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Resta] [Valor: C=-16]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 8-15] [Operacion: MPI_Recv parcial de C desde nodo 1] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 16-23] [Operacion: MPI_Recv parcial de C desde nodo 2] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 24-31] [Operacion: MPI_Recv parcial de C desde nodo 3] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 32-39] [Operacion: MPI_Recv parcial de C desde nodo 4] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: C global recibido en maestro] [Valor: -1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 1] [Operacion: C global recibido en maestro] [Valor: -2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 2] [Operacion: C global recibido en maestro] [Valor: -3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 3] [Operacion: C global recibido en maestro] [Valor: -4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 4] [Operacion: C global recibido en maestro] [Valor: -5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 5] [Operacion: C global recibido en maestro] [Valor: -6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 6] [Operacion: C global recibido en maestro] [Valor: -7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 7] [Operacion: C global recibido en maestro] [Valor: -8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: C global recibido en maestro] [Valor: -9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: C global recibido en maestro] [Valor: -10]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 10] [Operacion: C global recibido en maestro] [Valor: -11]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 11] [Operacion: C global recibido en maestro] [Valor: -12]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 12] [Operacion: C global recibido en maestro] [Valor: -13]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 13] [Operacion: C global recibido en maestro] [Valor: -14]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 14] [Operacion: C global recibido en maestro] [Valor: -15]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 15] [Operacion: C global recibido en maestro] [Valor: -16]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: C global recibido en maestro] [Valor: -17]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: C global recibido en maestro] [Valor: -18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 18] [Operacion: C global recibido en maestro] [Valor: -19]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 19] [Operacion: C global recibido en maestro] [Valor: -20]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 20] [Operacion: C global recibido en maestro] [Valor: -21]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 21] [Operacion: C global recibido en maestro] [Valor: -22]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 22] [Operacion: C global recibido en maestro] [Valor: -23]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 23] [Operacion: C global recibido en maestro] [Valor: -24]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: C global recibido en maestro] [Valor: -25]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 25] [Operacion: C global recibido en maestro] [Valor: -26]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 26] [Operacion: C global recibido en maestro] [Valor: -27]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 27] [Operacion: C global recibido en maestro] [Valor: -28]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 28] [Operacion: C global recibido en maestro] [Valor: -29]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 29] [Operacion: C global recibido en maestro] [Valor: -30]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 30] [Operacion: C global recibido en maestro] [Valor: -31]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 31] [Operacion: C global recibido en maestro] [Valor: -32]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: C global recibido en maestro] [Valor: -33]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 33] [Operacion: C global recibido en maestro] [Valor: -34]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 34] [Operacion: C global recibido en maestro] [Valor: -35]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 35] [Operacion: C global recibido en maestro] [Valor: -36]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 36] [Operacion: C global recibido en maestro] [Valor: -37]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 37] [Operacion: C global recibido en maestro] [Valor: -38]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 38] [Operacion: C global recibido en maestro] [Valor: -39]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 39] [Operacion: C global recibido en maestro] [Valor: -40]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Suma de verificacion de C global] [Valor: -820]
+[TIEMPO GLOBAL] Resta [Send/Recv] | N=40 | MPI_Wtime: 0.030285 s
+[TIEMPO COMUNICACION] Distribucion: 0.006152 s | Recopilacion: 0.010514 s | Total: 0.016665 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 3
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 3
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Maestro genera A y B globales] [Valor: secuencial]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Resta] [Valor: C=-1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Resta] [Valor: C=-6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Resta] [Valor: C=-2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Resta] [Valor: C=-8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Resta] [Valor: C=-5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Resta] [Valor: C=-3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Resta] [Valor: C=-7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Resta] [Valor: C=-4]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Resta] [Valor: C=-17]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Resta] [Valor: C=-25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Resta] [Valor: C=-33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Resta] [Valor: C=-26]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Resta] [Valor: C=-34]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Resta] [Valor: C=-32]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Resta] [Valor: C=-9]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Resta] [Valor: C=-18]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Resta] [Valor: C=-10]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Resta] [Valor: C=-38]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Resta] [Valor: C=-30]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Resta] [Valor: C=-40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Resta] [Valor: C=-28]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Resta] [Valor: C=-37]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Resta] [Valor: C=-29]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Resta] [Valor: C=-35]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Resta] [Valor: C=-36]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Resta] [Valor: C=-19]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Resta] [Valor: C=-11]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Resta] [Valor: C=-21]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Resta] [Valor: C=-12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Resta] [Valor: C=-22]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Resta] [Valor: C=-13]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Resta] [Valor: C=-23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Resta] [Valor: C=-15]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Resta] [Valor: C=-20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Resta] [Valor: C=-16]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Resta] [Valor: C=-24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Resta] [Valor: C=-14]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Resta] [Valor: C=-31]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Resta] [Valor: C=-39]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Resta] [Valor: C=-27]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: C global recibido en maestro] [Valor: -1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 1] [Operacion: C global recibido en maestro] [Valor: -2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 2] [Operacion: C global recibido en maestro] [Valor: -3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 3] [Operacion: C global recibido en maestro] [Valor: -4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 4] [Operacion: C global recibido en maestro] [Valor: -5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 5] [Operacion: C global recibido en maestro] [Valor: -6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 6] [Operacion: C global recibido en maestro] [Valor: -7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 7] [Operacion: C global recibido en maestro] [Valor: -8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: C global recibido en maestro] [Valor: -9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: C global recibido en maestro] [Valor: -10]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 10] [Operacion: C global recibido en maestro] [Valor: -11]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 11] [Operacion: C global recibido en maestro] [Valor: -12]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 12] [Operacion: C global recibido en maestro] [Valor: -13]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 13] [Operacion: C global recibido en maestro] [Valor: -14]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 14] [Operacion: C global recibido en maestro] [Valor: -15]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 15] [Operacion: C global recibido en maestro] [Valor: -16]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: C global recibido en maestro] [Valor: -17]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: C global recibido en maestro] [Valor: -18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 18] [Operacion: C global recibido en maestro] [Valor: -19]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 19] [Operacion: C global recibido en maestro] [Valor: -20]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 20] [Operacion: C global recibido en maestro] [Valor: -21]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 21] [Operacion: C global recibido en maestro] [Valor: -22]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 22] [Operacion: C global recibido en maestro] [Valor: -23]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 23] [Operacion: C global recibido en maestro] [Valor: -24]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: C global recibido en maestro] [Valor: -25]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 25] [Operacion: C global recibido en maestro] [Valor: -26]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 26] [Operacion: C global recibido en maestro] [Valor: -27]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 27] [Operacion: C global recibido en maestro] [Valor: -28]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 28] [Operacion: C global recibido en maestro] [Valor: -29]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 29] [Operacion: C global recibido en maestro] [Valor: -30]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 30] [Operacion: C global recibido en maestro] [Valor: -31]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 31] [Operacion: C global recibido en maestro] [Valor: -32]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: C global recibido en maestro] [Valor: -33]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 33] [Operacion: C global recibido en maestro] [Valor: -34]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 34] [Operacion: C global recibido en maestro] [Valor: -35]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 35] [Operacion: C global recibido en maestro] [Valor: -36]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 36] [Operacion: C global recibido en maestro] [Valor: -37]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 37] [Operacion: C global recibido en maestro] [Valor: -38]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 38] [Operacion: C global recibido en maestro] [Valor: -39]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 39] [Operacion: C global recibido en maestro] [Valor: -40]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Suma de verificacion de C global] [Valor: -820]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[TIEMPO GLOBAL] Resta [Scatter/Gather] | N=40 | MPI_Wtime: 0.028250 s
+[TIEMPO COMUNICACION] Distribucion: 0.005749 s | Recopilacion: 0.008147 s | Total: 0.013896 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 4
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Maestro genera A y B globales] [Valor: secuencial]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 8-15] [Operacion: MPI_Send bloque A y B hacia nodo 1] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 16-23] [Operacion: MPI_Send bloque A y B hacia nodo 2] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 24-31] [Operacion: MPI_Send bloque A y B hacia nodo 3] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 32-39] [Operacion: MPI_Send bloque A y B hacia nodo 4] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Multiplicacion] [Valor: C=32]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Multiplicacion] [Valor: C=98]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Multiplicacion] [Valor: C=128]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Multiplicacion] [Valor: C=8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Multiplicacion] [Valor: C=18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Multiplicacion] [Valor: C=2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Multiplicacion] [Valor: C=72]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Multiplicacion] [Valor: C=50]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Multiplicacion] [Valor: C=1250]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Multiplicacion] [Valor: C=2178]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Multiplicacion] [Valor: C=1458]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Multiplicacion] [Valor: C=2312]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Multiplicacion] [Valor: C=1568]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Multiplicacion] [Valor: C=2888]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Multiplicacion] [Valor: C=1682]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Multiplicacion] [Valor: C=162]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Multiplicacion] [Valor: C=578]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Multiplicacion] [Valor: C=242]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Multiplicacion] [Valor: C=2738]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Multiplicacion] [Valor: C=1800]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Multiplicacion] [Valor: C=3042]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Multiplicacion] [Valor: C=1922]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Multiplicacion] [Valor: C=2450]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Multiplicacion] [Valor: C=1352]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Multiplicacion] [Valor: C=2592]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Multiplicacion] [Valor: C=2048]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Multiplicacion] [Valor: C=3200]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Multiplicacion] [Valor: C=648]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Multiplicacion] [Valor: C=288]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Multiplicacion] [Valor: C=722]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Multiplicacion] [Valor: C=450]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Multiplicacion] [Valor: C=1058]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Multiplicacion] [Valor: C=512]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Multiplicacion] [Valor: C=882]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Multiplicacion] [Valor: C=200]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Multiplicacion] [Valor: C=800]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Multiplicacion] [Valor: C=338]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Multiplicacion] [Valor: C=1152]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Multiplicacion] [Valor: C=392]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Multiplicacion] [Valor: C=968]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 8-15] [Operacion: MPI_Recv parcial de C desde nodo 1] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 16-23] [Operacion: MPI_Recv parcial de C desde nodo 2] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 24-31] [Operacion: MPI_Recv parcial de C desde nodo 3] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 32-39] [Operacion: MPI_Recv parcial de C desde nodo 4] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: C global recibido en maestro] [Valor: 2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 1] [Operacion: C global recibido en maestro] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 2] [Operacion: C global recibido en maestro] [Valor: 18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 3] [Operacion: C global recibido en maestro] [Valor: 32]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 4] [Operacion: C global recibido en maestro] [Valor: 50]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 5] [Operacion: C global recibido en maestro] [Valor: 72]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 6] [Operacion: C global recibido en maestro] [Valor: 98]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 7] [Operacion: C global recibido en maestro] [Valor: 128]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: C global recibido en maestro] [Valor: 162]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: C global recibido en maestro] [Valor: 200]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 10] [Operacion: C global recibido en maestro] [Valor: 242]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 11] [Operacion: C global recibido en maestro] [Valor: 288]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 12] [Operacion: C global recibido en maestro] [Valor: 338]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 13] [Operacion: C global recibido en maestro] [Valor: 392]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 14] [Operacion: C global recibido en maestro] [Valor: 450]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 15] [Operacion: C global recibido en maestro] [Valor: 512]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: C global recibido en maestro] [Valor: 578]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: C global recibido en maestro] [Valor: 648]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 18] [Operacion: C global recibido en maestro] [Valor: 722]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 19] [Operacion: C global recibido en maestro] [Valor: 800]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 20] [Operacion: C global recibido en maestro] [Valor: 882]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 21] [Operacion: C global recibido en maestro] [Valor: 968]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 22] [Operacion: C global recibido en maestro] [Valor: 1058]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 23] [Operacion: C global recibido en maestro] [Valor: 1152]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: C global recibido en maestro] [Valor: 1250]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 25] [Operacion: C global recibido en maestro] [Valor: 1352]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 26] [Operacion: C global recibido en maestro] [Valor: 1458]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 27] [Operacion: C global recibido en maestro] [Valor: 1568]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 28] [Operacion: C global recibido en maestro] [Valor: 1682]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 29] [Operacion: C global recibido en maestro] [Valor: 1800]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 30] [Operacion: C global recibido en maestro] [Valor: 1922]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 31] [Operacion: C global recibido en maestro] [Valor: 2048]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: C global recibido en maestro] [Valor: 2178]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 33] [Operacion: C global recibido en maestro] [Valor: 2312]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 34] [Operacion: C global recibido en maestro] [Valor: 2450]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 35] [Operacion: C global recibido en maestro] [Valor: 2592]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 36] [Operacion: C global recibido en maestro] [Valor: 2738]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 37] [Operacion: C global recibido en maestro] [Valor: 2888]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 38] [Operacion: C global recibido en maestro] [Valor: 3042]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 39] [Operacion: C global recibido en maestro] [Valor: 3200]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Suma de verificacion de C global] [Valor: 44280]
+[TIEMPO GLOBAL] Multiplicacion [Send/Recv] | N=40 | MPI_Wtime: 0.024613 s
+[TIEMPO COMUNICACION] Distribucion: 0.003647 s | Recopilacion: 0.002952 s | Total: 0.006598 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 4
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 3
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Maestro genera A y B globales] [Valor: secuencial]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Multiplicacion] [Valor: C=72]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Multiplicacion] [Valor: C=2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Multiplicacion] [Valor: C=18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Multiplicacion] [Valor: C=128]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Multiplicacion] [Valor: C=32]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Multiplicacion] [Valor: C=98]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Multiplicacion] [Valor: C=50]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Multiplicacion] [Valor: C=8]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Multiplicacion] [Valor: C=1250]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Multiplicacion] [Valor: C=578]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Multiplicacion] [Valor: C=162]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Multiplicacion] [Valor: C=2178]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Multiplicacion] [Valor: C=1682]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Multiplicacion] [Valor: C=2592]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Multiplicacion] [Valor: C=1800]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Multiplicacion] [Valor: C=3042]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Multiplicacion] [Valor: C=1922]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Multiplicacion] [Valor: C=3200]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Multiplicacion] [Valor: C=2048]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Multiplicacion] [Valor: C=2888]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Multiplicacion] [Valor: C=1568]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Multiplicacion] [Valor: C=2738]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Multiplicacion] [Valor: C=1458]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Multiplicacion] [Valor: C=2312]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Multiplicacion] [Valor: C=1352]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Multiplicacion] [Valor: C=2450]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Multiplicacion] [Valor: C=648]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Multiplicacion] [Valor: C=200]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Multiplicacion] [Valor: C=882]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Multiplicacion] [Valor: C=338]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Multiplicacion] [Valor: C=722]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Multiplicacion] [Valor: C=242]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Multiplicacion] [Valor: C=800]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Multiplicacion] [Valor: C=288]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Multiplicacion] [Valor: C=968]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Multiplicacion] [Valor: C=392]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Multiplicacion] [Valor: C=1058]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Multiplicacion] [Valor: C=450]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Multiplicacion] [Valor: C=1152]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Multiplicacion] [Valor: C=512]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: C global recibido en maestro] [Valor: 2]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 1] [Operacion: C global recibido en maestro] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 2] [Operacion: C global recibido en maestro] [Valor: 18]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 3] [Operacion: C global recibido en maestro] [Valor: 32]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 4] [Operacion: C global recibido en maestro] [Valor: 50]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 5] [Operacion: C global recibido en maestro] [Valor: 72]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 6] [Operacion: C global recibido en maestro] [Valor: 98]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 7] [Operacion: C global recibido en maestro] [Valor: 128]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: C global recibido en maestro] [Valor: 162]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: C global recibido en maestro] [Valor: 200]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 10] [Operacion: C global recibido en maestro] [Valor: 242]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 11] [Operacion: C global recibido en maestro] [Valor: 288]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 12] [Operacion: C global recibido en maestro] [Valor: 338]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 13] [Operacion: C global recibido en maestro] [Valor: 392]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 14] [Operacion: C global recibido en maestro] [Valor: 450]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 15] [Operacion: C global recibido en maestro] [Valor: 512]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: C global recibido en maestro] [Valor: 578]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: C global recibido en maestro] [Valor: 648]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 18] [Operacion: C global recibido en maestro] [Valor: 722]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 19] [Operacion: C global recibido en maestro] [Valor: 800]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 20] [Operacion: C global recibido en maestro] [Valor: 882]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 21] [Operacion: C global recibido en maestro] [Valor: 968]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 22] [Operacion: C global recibido en maestro] [Valor: 1058]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 23] [Operacion: C global recibido en maestro] [Valor: 1152]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: C global recibido en maestro] [Valor: 1250]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 25] [Operacion: C global recibido en maestro] [Valor: 1352]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 26] [Operacion: C global recibido en maestro] [Valor: 1458]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 27] [Operacion: C global recibido en maestro] [Valor: 1568]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 28] [Operacion: C global recibido en maestro] [Valor: 1682]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 29] [Operacion: C global recibido en maestro] [Valor: 1800]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 30] [Operacion: C global recibido en maestro] [Valor: 1922]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 31] [Operacion: C global recibido en maestro] [Valor: 2048]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: C global recibido en maestro] [Valor: 2178]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 33] [Operacion: C global recibido en maestro] [Valor: 2312]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 34] [Operacion: C global recibido en maestro] [Valor: 2450]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 35] [Operacion: C global recibido en maestro] [Valor: 2592]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 36] [Operacion: C global recibido en maestro] [Valor: 2738]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 37] [Operacion: C global recibido en maestro] [Valor: 2888]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 38] [Operacion: C global recibido en maestro] [Valor: 3042]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 39] [Operacion: C global recibido en maestro] [Valor: 3200]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Suma de verificacion de C global] [Valor: 44280]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[TIEMPO GLOBAL] Multiplicacion [Scatter/Gather] | N=40 | MPI_Wtime: 0.031063 s
+[TIEMPO COMUNICACION] Distribucion: 0.005466 s | Recopilacion: 0.010084 s | Total: 0.015550 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 5
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Maestro genera A y B globales] [Valor: secuencial]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 8-15] [Operacion: MPI_Send bloque A y B hacia nodo 1] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 16-23] [Operacion: MPI_Send bloque A y B hacia nodo 2] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 24-31] [Operacion: MPI_Send bloque A y B hacia nodo 3] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 32-39] [Operacion: MPI_Send bloque A y B hacia nodo 4] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Cuadrado] [Valor: C=1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Cuadrado] [Valor: C=4]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Recv bloque A y B desde nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Cuadrado] [Valor: C=9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Cuadrado] [Valor: C=25]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Cuadrado] [Valor: C=64]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Cuadrado] [Valor: C=49]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Cuadrado] [Valor: C=36]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Cuadrado] [Valor: C=16]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Cuadrado] [Valor: C=625]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Cuadrado] [Valor: C=1444]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Cuadrado] [Valor: C=729]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Cuadrado] [Valor: C=1369]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Cuadrado] [Valor: C=900]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Cuadrado] [Valor: C=1089]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Cuadrado] [Valor: C=841]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Cuadrado] [Valor: C=1521]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Cuadrado] [Valor: C=784]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Cuadrado] [Valor: C=81]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Cuadrado] [Valor: C=1600]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Cuadrado] [Valor: C=676]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Cuadrado] [Valor: C=1156]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Cuadrado] [Valor: C=961]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Cuadrado] [Valor: C=1296]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Cuadrado] [Valor: C=1024]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Cuadrado] [Valor: C=1225]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Cuadrado] [Valor: C=289]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Cuadrado] [Valor: C=100]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Cuadrado] [Valor: C=324]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Cuadrado] [Valor: C=169]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Cuadrado] [Valor: C=529]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Cuadrado] [Valor: C=196]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Cuadrado] [Valor: C=576]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Cuadrado] [Valor: C=121]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Cuadrado] [Valor: C=361]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Cuadrado] [Valor: C=144]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Cuadrado] [Valor: C=400]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Cuadrado] [Valor: C=225]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Cuadrado] [Valor: C=441]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Cuadrado] [Valor: C=256]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Cuadrado] [Valor: C=484]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 8-15] [Operacion: MPI_Recv parcial de C desde nodo 1] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 16-23] [Operacion: MPI_Recv parcial de C desde nodo 2] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 24-31] [Operacion: MPI_Recv parcial de C desde nodo 3] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 32-39] [Operacion: MPI_Recv parcial de C desde nodo 4] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Send parcial de C hacia nodo 0] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: C global recibido en maestro] [Valor: 1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 1] [Operacion: C global recibido en maestro] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 2] [Operacion: C global recibido en maestro] [Valor: 9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 3] [Operacion: C global recibido en maestro] [Valor: 16]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 4] [Operacion: C global recibido en maestro] [Valor: 25]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 5] [Operacion: C global recibido en maestro] [Valor: 36]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 6] [Operacion: C global recibido en maestro] [Valor: 49]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 7] [Operacion: C global recibido en maestro] [Valor: 64]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: C global recibido en maestro] [Valor: 81]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: C global recibido en maestro] [Valor: 100]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 10] [Operacion: C global recibido en maestro] [Valor: 121]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 11] [Operacion: C global recibido en maestro] [Valor: 144]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 12] [Operacion: C global recibido en maestro] [Valor: 169]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 13] [Operacion: C global recibido en maestro] [Valor: 196]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 14] [Operacion: C global recibido en maestro] [Valor: 225]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 15] [Operacion: C global recibido en maestro] [Valor: 256]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: C global recibido en maestro] [Valor: 289]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: C global recibido en maestro] [Valor: 324]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 18] [Operacion: C global recibido en maestro] [Valor: 361]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 19] [Operacion: C global recibido en maestro] [Valor: 400]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 20] [Operacion: C global recibido en maestro] [Valor: 441]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 21] [Operacion: C global recibido en maestro] [Valor: 484]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 22] [Operacion: C global recibido en maestro] [Valor: 529]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 23] [Operacion: C global recibido en maestro] [Valor: 576]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: C global recibido en maestro] [Valor: 625]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 25] [Operacion: C global recibido en maestro] [Valor: 676]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 26] [Operacion: C global recibido en maestro] [Valor: 729]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 27] [Operacion: C global recibido en maestro] [Valor: 784]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 28] [Operacion: C global recibido en maestro] [Valor: 841]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 29] [Operacion: C global recibido en maestro] [Valor: 900]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 30] [Operacion: C global recibido en maestro] [Valor: 961]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 31] [Operacion: C global recibido en maestro] [Valor: 1024]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: C global recibido en maestro] [Valor: 1089]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 33] [Operacion: C global recibido en maestro] [Valor: 1156]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 34] [Operacion: C global recibido en maestro] [Valor: 1225]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 35] [Operacion: C global recibido en maestro] [Valor: 1296]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 36] [Operacion: C global recibido en maestro] [Valor: 1369]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 37] [Operacion: C global recibido en maestro] [Valor: 1444]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 38] [Operacion: C global recibido en maestro] [Valor: 1521]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 39] [Operacion: C global recibido en maestro] [Valor: 1600]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Suma de verificacion de C global] [Valor: 22140]
+[TIEMPO GLOBAL] Cuadrado [Send/Recv] | N=40 | MPI_Wtime: 0.030603 s
+[TIEMPO COMUNICACION] Distribucion: 0.005223 s | Recopilacion: 0.009188 s | Total: 0.014411 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 5
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 3
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Maestro genera A y B globales] [Valor: secuencial]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Cuadrado] [Valor: C=9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Cuadrado] [Valor: C=1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Cuadrado] [Valor: C=36]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Cuadrado] [Valor: C=64]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Cuadrado] [Valor: C=16]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Cuadrado] [Valor: C=25]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Cuadrado] [Valor: C=4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Cuadrado] [Valor: C=49]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Cuadrado] [Valor: C=625]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Cuadrado] [Valor: C=1225]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Cuadrado] [Valor: C=784]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Cuadrado] [Valor: C=1024]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Cuadrado] [Valor: C=1089]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Cuadrado] [Valor: C=729]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Cuadrado] [Valor: C=1369]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Cuadrado] [Valor: C=676]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Cuadrado] [Valor: C=1296]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Cuadrado] [Valor: C=841]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Cuadrado] [Valor: C=1156]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Cuadrado] [Valor: C=900]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Cuadrado] [Valor: C=1444]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Cuadrado] [Valor: C=961]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Cuadrado] [Valor: C=1600]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Cuadrado] [Valor: C=81]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Cuadrado] [Valor: C=289]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Cuadrado] [Valor: C=1521]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Cuadrado] [Valor: C=100]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Cuadrado] [Valor: C=324]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Cuadrado] [Valor: C=225]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Cuadrado] [Valor: C=361]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Cuadrado] [Valor: C=121]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Cuadrado] [Valor: C=400]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Cuadrado] [Valor: C=144]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Cuadrado] [Valor: C=441]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Cuadrado] [Valor: C=484]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Cuadrado] [Valor: C=169]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Cuadrado] [Valor: C=529]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Cuadrado] [Valor: C=196]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Cuadrado] [Valor: C=576]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Cuadrado] [Valor: C=256]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: C global recibido en maestro] [Valor: 1]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Posicion: 24-31] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 1] [Operacion: C global recibido en maestro] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 2] [Operacion: C global recibido en maestro] [Valor: 9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 3] [Operacion: C global recibido en maestro] [Valor: 16]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 4] [Operacion: C global recibido en maestro] [Valor: 25]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 5] [Operacion: C global recibido en maestro] [Valor: 36]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Posicion: 8-15] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Posicion: 16-23] [Operacion: MPI_Gather envia parcial de C] [Valor: 8 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 6] [Operacion: C global recibido en maestro] [Valor: 49]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 7] [Operacion: C global recibido en maestro] [Valor: 64]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: C global recibido en maestro] [Valor: 81]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: C global recibido en maestro] [Valor: 100]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 10] [Operacion: C global recibido en maestro] [Valor: 121]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 11] [Operacion: C global recibido en maestro] [Valor: 144]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 12] [Operacion: C global recibido en maestro] [Valor: 169]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 13] [Operacion: C global recibido en maestro] [Valor: 196]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 14] [Operacion: C global recibido en maestro] [Valor: 225]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 15] [Operacion: C global recibido en maestro] [Valor: 256]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: C global recibido en maestro] [Valor: 289]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: C global recibido en maestro] [Valor: 324]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 18] [Operacion: C global recibido en maestro] [Valor: 361]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 19] [Operacion: C global recibido en maestro] [Valor: 400]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 20] [Operacion: C global recibido en maestro] [Valor: 441]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 21] [Operacion: C global recibido en maestro] [Valor: 484]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 22] [Operacion: C global recibido en maestro] [Valor: 529]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 23] [Operacion: C global recibido en maestro] [Valor: 576]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: C global recibido en maestro] [Valor: 625]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 25] [Operacion: C global recibido en maestro] [Valor: 676]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 26] [Operacion: C global recibido en maestro] [Valor: 729]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 27] [Operacion: C global recibido en maestro] [Valor: 784]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 28] [Operacion: C global recibido en maestro] [Valor: 841]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 29] [Operacion: C global recibido en maestro] [Valor: 900]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 30] [Operacion: C global recibido en maestro] [Valor: 961]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 31] [Operacion: C global recibido en maestro] [Valor: 1024]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: C global recibido en maestro] [Valor: 1089]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 33] [Operacion: C global recibido en maestro] [Valor: 1156]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 34] [Operacion: C global recibido en maestro] [Valor: 1225]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 35] [Operacion: C global recibido en maestro] [Valor: 1296]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 36] [Operacion: C global recibido en maestro] [Valor: 1369]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 37] [Operacion: C global recibido en maestro] [Valor: 1444]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 38] [Operacion: C global recibido en maestro] [Valor: 1521]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 39] [Operacion: C global recibido en maestro] [Valor: 1600]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-39] [Operacion: Suma de verificacion de C global] [Valor: 22140]
+[TIEMPO GLOBAL] Cuadrado [Scatter/Gather] | N=40 | MPI_Wtime: 0.030627 s
+[TIEMPO COMUNICACION] Distribucion: 0.005944 s | Recopilacion: 0.009067 s | Total: 0.015011 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 8
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Sumatoria Local (suma A[i])] [Valor: 1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Sumatoria Local (suma A[i])] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Sumatoria Local (suma A[i])] [Valor: 5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Sumatoria Local (suma A[i])] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Sumatoria Local (suma A[i])] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Sumatoria Local (suma A[i])] [Valor: 7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Sumatoria Local (suma A[i])] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Sumatoria Local (suma A[i])] [Valor: 2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0-7] [Operacion: Sumatoria Local del nodo] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Sumatoria Local (suma A[i])] [Valor: 25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Sumatoria Local (suma A[i])] [Valor: 35]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Sumatoria Local (suma A[i])] [Valor: 26]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Sumatoria Local (suma A[i])] [Valor: 33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Sumatoria Local (suma A[i])] [Valor: 32]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Sumatoria Local (suma A[i])] [Valor: 34]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Sumatoria Local (suma A[i])] [Valor: 28]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Sumatoria Local (suma A[i])] [Valor: 17]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Sumatoria Local (suma A[i])] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Sumatoria Local (suma A[i])] [Valor: 40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Sumatoria Local (suma A[i])] [Valor: 29]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Sumatoria Local (suma A[i])] [Valor: 37]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Sumatoria Local (suma A[i])] [Valor: 27]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Sumatoria Local (suma A[i])] [Valor: 9]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Sumatoria Local (suma A[i])] [Valor: 18]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Sumatoria Local (suma A[i])] [Valor: 15]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Sumatoria Local (suma A[i])] [Valor: 21]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Sumatoria Local (suma A[i])] [Valor: 31]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Sumatoria Local (suma A[i])] [Valor: 39]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Sumatoria Local (suma A[i])] [Valor: 30]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Sumatoria Local (suma A[i])] [Valor: 38]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24-31] [Operacion: Sumatoria Local del nodo] [Valor: 228]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32-39] [Operacion: Sumatoria Local del nodo] [Valor: 292]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Sumatoria Local (suma A[i])] [Valor: 10]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Sumatoria Local (suma A[i])] [Valor: 19]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Sumatoria Local (suma A[i])] [Valor: 13]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Sumatoria Local (suma A[i])] [Valor: 23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Sumatoria Local (suma A[i])] [Valor: 11]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Sumatoria Local (suma A[i])] [Valor: 22]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Sumatoria Local (suma A[i])] [Valor: 16]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Sumatoria Local (suma A[i])] [Valor: 20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Sumatoria Local (suma A[i])] [Valor: 14]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Sumatoria Local (suma A[i])] [Valor: 24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Sumatoria Local (suma A[i])] [Valor: 12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16-23] [Operacion: Sumatoria Local del nodo] [Valor: 164]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8-15] [Operacion: Sumatoria Local del nodo] [Valor: 100]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Sumatoria Global (MPI_Reduce, solo nodo 0)] [Valor: 820]
+[TIEMPO GLOBAL] Sumatoria [MPI_Reduce] | N=40 | MPI_Wtime: 0.012754 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 8
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Sumatoria Local (suma A[i])] [Valor: 1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Sumatoria Local (suma A[i])] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Sumatoria Local (suma A[i])] [Valor: 2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Sumatoria Local (suma A[i])] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Sumatoria Local (suma A[i])] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Sumatoria Local (suma A[i])] [Valor: 7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Sumatoria Local (suma A[i])] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Sumatoria Local (suma A[i])] [Valor: 5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0-7] [Operacion: Sumatoria Local del nodo] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Sumatoria Local (suma A[i])] [Valor: 25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Sumatoria Local (suma A[i])] [Valor: 39]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Sumatoria Local (suma A[i])] [Valor: 30]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Sumatoria Local (suma A[i])] [Valor: 37]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Sumatoria Local (suma A[i])] [Valor: 32]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Sumatoria Local (suma A[i])] [Valor: 9]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Sumatoria Local (suma A[i])] [Valor: 17]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Sumatoria Local (suma A[i])] [Valor: 38]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Sumatoria Local (suma A[i])] [Valor: 31]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Sumatoria Local (suma A[i])] [Valor: 13]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Sumatoria Local (suma A[i])] [Valor: 36]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Sumatoria Local (suma A[i])] [Valor: 18]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Sumatoria Local (suma A[i])] [Valor: 14]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Sumatoria Local (suma A[i])] [Valor: 21]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Sumatoria Local (suma A[i])] [Valor: 15]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Sumatoria Local (suma A[i])] [Valor: 22]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Sumatoria Local (suma A[i])] [Valor: 16]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Sumatoria Local (suma A[i])] [Valor: 23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Sumatoria Local (suma A[i])] [Valor: 11]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Sumatoria Local (suma A[i])] [Valor: 24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Sumatoria Local (suma A[i])] [Valor: 10]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Sumatoria Local (suma A[i])] [Valor: 19]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Sumatoria Local (suma A[i])] [Valor: 26]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Sumatoria Local (suma A[i])] [Valor: 40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Sumatoria Local (suma A[i])] [Valor: 27]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Sumatoria Local (suma A[i])] [Valor: 34]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Sumatoria Local (suma A[i])] [Valor: 29]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Sumatoria Local (suma A[i])] [Valor: 12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Sumatoria Local (suma A[i])] [Valor: 20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16-23] [Operacion: Sumatoria Local del nodo] [Valor: 164]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8-15] [Operacion: Sumatoria Local del nodo] [Valor: 100]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Sumatoria Local (suma A[i])] [Valor: 33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Sumatoria Local (suma A[i])] [Valor: 28]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Sumatoria Local (suma A[i])] [Valor: 35]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 820]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24-31] [Operacion: Sumatoria Local del nodo] [Valor: 228]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 820]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 820]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32-39] [Operacion: Sumatoria Local del nodo] [Valor: 292]
+[TIEMPO GLOBAL] Sumatoria [MPI_Allreduce] | N=40 | MPI_Wtime: 0.021403 s
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 820]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 820]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 9
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Sumatoria Local (suma A[i])] [Valor: 1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Sumatoria Local (suma A[i])] [Valor: 7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Sumatoria Local (suma A[i])] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Sumatoria Local (suma A[i])] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Sumatoria Local (suma A[i])] [Valor: 2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Sumatoria Local (suma A[i])] [Valor: 5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Sumatoria Local (suma A[i])] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Sumatoria Local (suma A[i])] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0-7] [Operacion: Sumatoria Local del nodo] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Sumatoria Local (suma A[i])] [Valor: 25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Sumatoria Local (suma A[i])] [Valor: 38]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Sumatoria Local (suma A[i])] [Valor: 30]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Sumatoria Local (suma A[i])] [Valor: 35]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Sumatoria Local (suma A[i])] [Valor: 29]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Sumatoria Local (suma A[i])] [Valor: 40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Sumatoria Local (suma A[i])] [Valor: 32]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Sumatoria Local (suma A[i])] [Valor: 34]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Sumatoria Local (suma A[i])] [Valor: 28]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Sumatoria Local (suma A[i])] [Valor: 9]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Sumatoria Local (suma A[i])] [Valor: 23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Sumatoria Local (suma A[i])] [Valor: 15]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Sumatoria Local (suma A[i])] [Valor: 24]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Sumatoria Local (suma A[i])] [Valor: 37]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Sumatoria Local (suma A[i])] [Valor: 16]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Sumatoria Local (suma A[i])] [Valor: 19]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Sumatoria Local (suma A[i])] [Valor: 10]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Sumatoria Local (suma A[i])] [Valor: 21]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Sumatoria Local (suma A[i])] [Valor: 13]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Sumatoria Local (suma A[i])] [Valor: 17]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Sumatoria Local (suma A[i])] [Valor: 11]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Sumatoria Local (suma A[i])] [Valor: 27]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Sumatoria Local (suma A[i])] [Valor: 39]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Sumatoria Local (suma A[i])] [Valor: 20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Sumatoria Local (suma A[i])] [Valor: 14]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Sumatoria Local (suma A[i])] [Valor: 22]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Sumatoria Local (suma A[i])] [Valor: 12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Sumatoria Local (suma A[i])] [Valor: 18]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8-15] [Operacion: Sumatoria Local del nodo] [Valor: 100]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16-23] [Operacion: Sumatoria Local del nodo] [Valor: 164]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Sumatoria Local (suma A[i])] [Valor: 31]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Sumatoria Local (suma A[i])] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Sumatoria Local (suma A[i])] [Valor: 26]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Sumatoria Local (suma A[i])] [Valor: 33]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Promedio Global (MPI_Reduce, solo nodo 0)] [Valor: 20.50]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24-31] [Operacion: Sumatoria Local del nodo] [Valor: 228]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32-39] [Operacion: Sumatoria Local del nodo] [Valor: 292]
+[TIEMPO GLOBAL] Promedio [MPI_Reduce] | N=40 | MPI_Wtime: 0.018324 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 9
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Sumatoria Local (suma A[i])] [Valor: 1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Sumatoria Local (suma A[i])] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Sumatoria Local (suma A[i])] [Valor: 7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Sumatoria Local (suma A[i])] [Valor: 2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Sumatoria Local (suma A[i])] [Valor: 5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Sumatoria Local (suma A[i])] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Sumatoria Local (suma A[i])] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Sumatoria Local (suma A[i])] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0-7] [Operacion: Sumatoria Local del nodo] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Sumatoria Local (suma A[i])] [Valor: 33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Sumatoria Local (suma A[i])] [Valor: 28]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Sumatoria Local (suma A[i])] [Valor: 35]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Sumatoria Local (suma A[i])] [Valor: 25]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Sumatoria Local (suma A[i])] [Valor: 9]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Sumatoria Local (suma A[i])] [Valor: 40]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Sumatoria Local (suma A[i])] [Valor: 17]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Sumatoria Local (suma A[i])] [Valor: 30]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Sumatoria Local (suma A[i])] [Valor: 10]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Sumatoria Local (suma A[i])] [Valor: 21]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Sumatoria Local (suma A[i])] [Valor: 15]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Sumatoria Local (suma A[i])] [Valor: 38]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Sumatoria Local (suma A[i])] [Valor: 18]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Sumatoria Local (suma A[i])] [Valor: 32]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Sumatoria Local (suma A[i])] [Valor: 37]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Sumatoria Local (suma A[i])] [Valor: 13]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Sumatoria Local (suma A[i])] [Valor: 19]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Sumatoria Local (suma A[i])] [Valor: 11]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Sumatoria Local (suma A[i])] [Valor: 23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Sumatoria Local (suma A[i])] [Valor: 16]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Sumatoria Local (suma A[i])] [Valor: 31]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Sumatoria Local (suma A[i])] [Valor: 34]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Sumatoria Local (suma A[i])] [Valor: 22]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Sumatoria Local (suma A[i])] [Valor: 27]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Sumatoria Local (suma A[i])] [Valor: 14]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Sumatoria Local (suma A[i])] [Valor: 39]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Sumatoria Local (suma A[i])] [Valor: 20]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Sumatoria Local (suma A[i])] [Valor: 26]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Sumatoria Local (suma A[i])] [Valor: 12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Sumatoria Local (suma A[i])] [Valor: 24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8-15] [Operacion: Sumatoria Local del nodo] [Valor: 100]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Sumatoria Local (suma A[i])] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Sumatoria Local (suma A[i])] [Valor: 29]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32-39] [Operacion: Sumatoria Local del nodo] [Valor: 292]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24-31] [Operacion: Sumatoria Local del nodo] [Valor: 228]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16-23] [Operacion: Sumatoria Local del nodo] [Valor: 164]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 20.50]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 20.50]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 20.50]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 20.50]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 20.50]
+[TIEMPO GLOBAL] Promedio [MPI_Allreduce] | N=40 | MPI_Wtime: 0.028120 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 10
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Maximo Local (compara A[i])] [Valor: 1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Maximo Local (compara A[i])] [Valor: 5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Maximo Local (compara A[i])] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Maximo Local (compara A[i])] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Maximo Local (compara A[i])] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Maximo Local (compara A[i])] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Maximo Local (compara A[i])] [Valor: 7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Maximo Local (compara A[i])] [Valor: 2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0-7] [Operacion: Maximo Local del nodo] [Valor: 8]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Maximo Local (compara A[i])] [Valor: 25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Maximo Local (compara A[i])] [Valor: 39]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Maximo Local (compara A[i])] [Valor: 32]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Maximo Local (compara A[i])] [Valor: 40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Maximo Local (compara A[i])] [Valor: 28]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Maximo Local (compara A[i])] [Valor: 33]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Maximo Local (compara A[i])] [Valor: 17]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Maximo Local (compara A[i])] [Valor: 27]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Maximo Local (compara A[i])] [Valor: 35]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Maximo Local (compara A[i])] [Valor: 31]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Maximo Local (compara A[i])] [Valor: 34]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Maximo Local (compara A[i])] [Valor: 26]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Maximo Local (compara A[i])] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Maximo Local (compara A[i])] [Valor: 30]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Maximo Local (compara A[i])] [Valor: 37]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Maximo Local (compara A[i])] [Valor: 29]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Maximo Local (compara A[i])] [Valor: 38]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24-31] [Operacion: Maximo Local del nodo] [Valor: 32]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32-39] [Operacion: Maximo Local del nodo] [Valor: 40]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Maximo Local (compara A[i])] [Valor: 9]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Maximo Local (compara A[i])] [Valor: 18]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Maximo Local (compara A[i])] [Valor: 15]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Maximo Local (compara A[i])] [Valor: 23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Maximo Local (compara A[i])] [Valor: 13]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Maximo Local (compara A[i])] [Valor: 21]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Maximo Local (compara A[i])] [Valor: 10]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Maximo Local (compara A[i])] [Valor: 19]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Maximo Local (compara A[i])] [Valor: 11]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Maximo Local (compara A[i])] [Valor: 24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Maximo Local (compara A[i])] [Valor: 16]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Maximo Local (compara A[i])] [Valor: 22]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Maximo Global (MPI_Reduce, solo nodo 0)] [Valor: 40]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Maximo Local (compara A[i])] [Valor: 14]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Maximo Local (compara A[i])] [Valor: 20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Maximo Local (compara A[i])] [Valor: 12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16-23] [Operacion: Maximo Local del nodo] [Valor: 24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8-15] [Operacion: Maximo Local del nodo] [Valor: 16]
+[TIEMPO GLOBAL] Maximo [MPI_Reduce] | N=40 | MPI_Wtime: 0.022712 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 10
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Maximo Local (compara A[i])] [Valor: 1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Maximo Local (compara A[i])] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Maximo Local (compara A[i])] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Maximo Local (compara A[i])] [Valor: 2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Maximo Local (compara A[i])] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Maximo Local (compara A[i])] [Valor: 7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Maximo Local (compara A[i])] [Valor: 5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Maximo Local (compara A[i])] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0-7] [Operacion: Maximo Local del nodo] [Valor: 8]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Maximo Local (compara A[i])] [Valor: 25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Maximo Local (compara A[i])] [Valor: 33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Maximo Local (compara A[i])] [Valor: 27]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Maximo Local (compara A[i])] [Valor: 35]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Maximo Local (compara A[i])] [Valor: 30]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Maximo Local (compara A[i])] [Valor: 9]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Maximo Local (compara A[i])] [Valor: 17]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Maximo Local (compara A[i])] [Valor: 40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Maximo Local (compara A[i])] [Valor: 26]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Maximo Local (compara A[i])] [Valor: 38]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Maximo Local (compara A[i])] [Valor: 28]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Maximo Local (compara A[i])] [Valor: 37]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Maximo Local (compara A[i])] [Valor: 32]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Maximo Local (compara A[i])] [Valor: 34]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Maximo Local (compara A[i])] [Valor: 29]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Maximo Local (compara A[i])] [Valor: 39]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Maximo Local (compara A[i])] [Valor: 31]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Maximo Local (compara A[i])] [Valor: 15]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Maximo Local (compara A[i])] [Valor: 18]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Maximo Local (compara A[i])] [Valor: 16]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Maximo Local (compara A[i])] [Valor: 21]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Maximo Local (compara A[i])] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24-31] [Operacion: Maximo Local del nodo] [Valor: 32]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32-39] [Operacion: Maximo Local del nodo] [Valor: 40]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Maximo Local (compara A[i])] [Valor: 10]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Maximo Local (compara A[i])] [Valor: 23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Maximo Local (compara A[i])] [Valor: 13]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Maximo Local (compara A[i])] [Valor: 19]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Maximo Local (compara A[i])] [Valor: 11]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Maximo Local (compara A[i])] [Valor: 20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Maximo Local (compara A[i])] [Valor: 14]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Maximo Local (compara A[i])] [Valor: 24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Maximo Local (compara A[i])] [Valor: 12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Maximo Local (compara A[i])] [Valor: 22]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8-15] [Operacion: Maximo Local del nodo] [Valor: 16]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 40]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16-23] [Operacion: Maximo Local del nodo] [Valor: 24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 40]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 40]
+[TIEMPO GLOBAL] Maximo [MPI_Allreduce] | N=40 | MPI_Wtime: 0.013144 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 11
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Minimo Local (compara A[i])] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Minimo Local (compara A[i])] [Valor: 7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Minimo Local (compara A[i])] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Minimo Local (compara A[i])] [Valor: 2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Minimo Local (compara A[i])] [Valor: 5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Minimo Local (compara A[i])] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Minimo Local (compara A[i])] [Valor: 1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Minimo Local (compara A[i])] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0-7] [Operacion: Minimo Local del nodo] [Valor: 1]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Minimo Local (compara A[i])] [Valor: 25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Minimo Local (compara A[i])] [Valor: 38]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Minimo Local (compara A[i])] [Valor: 26]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Minimo Local (compara A[i])] [Valor: 37]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Minimo Local (compara A[i])] [Valor: 35]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Minimo Local (compara A[i])] [Valor: 30]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Minimo Local (compara A[i])] [Valor: 34]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Minimo Local (compara A[i])] [Valor: 9]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Minimo Local (compara A[i])] [Valor: 17]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Minimo Local (compara A[i])] [Valor: 13]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Minimo Local (compara A[i])] [Valor: 18]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Minimo Local (compara A[i])] [Valor: 14]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Minimo Local (compara A[i])] [Valor: 29]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Minimo Local (compara A[i])] [Valor: 40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Minimo Local (compara A[i])] [Valor: 31]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Minimo Local (compara A[i])] [Valor: 39]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Minimo Local (compara A[i])] [Valor: 27]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Minimo Local (compara A[i])] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Minimo Local (compara A[i])] [Valor: 33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Minimo Local (compara A[i])] [Valor: 32]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32-39] [Operacion: Minimo Local del nodo] [Valor: 33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Minimo Local (compara A[i])] [Valor: 28]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24-31] [Operacion: Minimo Local del nodo] [Valor: 25]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Minimo Local (compara A[i])] [Valor: 21]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Minimo Local (compara A[i])] [Valor: 11]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Minimo Local (compara A[i])] [Valor: 23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Minimo Local (compara A[i])] [Valor: 15]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Minimo Local (compara A[i])] [Valor: 19]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Minimo Local (compara A[i])] [Valor: 10]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Minimo Local (compara A[i])] [Valor: 22]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Minimo Local (compara A[i])] [Valor: 12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Minimo Local (compara A[i])] [Valor: 24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Minimo Local (compara A[i])] [Valor: 16]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Minimo Local (compara A[i])] [Valor: 20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8-15] [Operacion: Minimo Local del nodo] [Valor: 9]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Minimo Global (MPI_Reduce, solo nodo 0)] [Valor: 1]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16-23] [Operacion: Minimo Local del nodo] [Valor: 17]
+[TIEMPO GLOBAL] Minimo [MPI_Reduce] | N=40 | MPI_Wtime: 0.014238 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 11
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Minimo Local (compara A[i])] [Valor: 4]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Minimo Local (compara A[i])] [Valor: 7]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Minimo Local (compara A[i])] [Valor: 5]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Minimo Local (compara A[i])] [Valor: 2]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Minimo Local (compara A[i])] [Valor: 6]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Minimo Local (compara A[i])] [Valor: 3]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Minimo Local (compara A[i])] [Valor: 8]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Minimo Local (compara A[i])] [Valor: 1]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0-7] [Operacion: Minimo Local del nodo] [Valor: 1]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Minimo Local (compara A[i])] [Valor: 25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Minimo Local (compara A[i])] [Valor: 37]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Minimo Local (compara A[i])] [Valor: 27]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Minimo Local (compara A[i])] [Valor: 36]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Minimo Local (compara A[i])] [Valor: 31]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Minimo Local (compara A[i])] [Valor: 33]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Minimo Local (compara A[i])] [Valor: 30]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Minimo Local (compara A[i])] [Valor: 35]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Minimo Local (compara A[i])] [Valor: 29]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Minimo Local (compara A[i])] [Valor: 40]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Minimo Local (compara A[i])] [Valor: 28]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Minimo Local (compara A[i])] [Valor: 39]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Minimo Local (compara A[i])] [Valor: 26]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Minimo Local (compara A[i])] [Valor: 15]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Minimo Local (compara A[i])] [Valor: 17]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Minimo Local (compara A[i])] [Valor: 38]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Minimo Local (compara A[i])] [Valor: 32]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Minimo Local (compara A[i])] [Valor: 13]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Minimo Local (compara A[i])] [Valor: 18]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Minimo Local (compara A[i])] [Valor: 34]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24-31] [Operacion: Minimo Local del nodo] [Valor: 25]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32-39] [Operacion: Minimo Local del nodo] [Valor: 33]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Minimo Local (compara A[i])] [Valor: 14]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Minimo Local (compara A[i])] [Valor: 23]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Minimo Local (compara A[i])] [Valor: 9]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Minimo Local (compara A[i])] [Valor: 21]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Minimo Local (compara A[i])] [Valor: 11]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Minimo Local (compara A[i])] [Valor: 19]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Minimo Local (compara A[i])] [Valor: 16]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Minimo Local (compara A[i])] [Valor: 24]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Minimo Local (compara A[i])] [Valor: 10]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Minimo Local (compara A[i])] [Valor: 22]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Minimo Local (compara A[i])] [Valor: 12]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Minimo Local (compara A[i])] [Valor: 20]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8-15] [Operacion: Minimo Local del nodo] [Valor: 9]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16-23] [Operacion: Minimo Local del nodo] [Valor: 17]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+[TIEMPO GLOBAL] Minimo [MPI_Allreduce] | N=40 | MPI_Wtime: 0.014688 s
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 7
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 1] [Posicion: 1] [Operacion: Llenado Aleatorio] [Valor: A=141194, B=254692]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 5] [Posicion: 5] [Operacion: Llenado Aleatorio] [Valor: A=687442, B=288321]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 6] [Posicion: 6] [Operacion: Llenado Aleatorio] [Valor: A=574004, B=54904]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 4] [Posicion: 4] [Operacion: Llenado Aleatorio] [Valor: A=800880, B=38090]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 2] [Posicion: 2] [Operacion: Llenado Aleatorio] [Valor: A=27756, B=504923]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 7] [Posicion: 7] [Operacion: Llenado Aleatorio] [Valor: A=460566, B=821487]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 0] [Posicion: 24] [Operacion: Llenado Aleatorio] [Valor: A=277794, B=921987]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 0] [Posicion: 0] [Operacion: Llenado Aleatorio] [Valor: A=254632, B=488109]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Hilo OpenMP: 3] [Posicion: 3] [Operacion: Llenado Aleatorio] [Valor: A=914318, B=271507]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 0] [Posicion: 32] [Operacion: Llenado Aleatorio] [Valor: A=415197, B=837597]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 5] [Posicion: 29] [Operacion: Llenado Aleatorio] [Valor: A=710604, B=722199]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 2] [Posicion: 34] [Operacion: Llenado Aleatorio] [Valor: A=704673, B=854411]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 6] [Posicion: 30] [Operacion: Llenado Aleatorio] [Valor: A=597166, B=488782]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 6] [Posicion: 38] [Operacion: Llenado Aleatorio] [Valor: A=250921, B=404392]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 8] [Operacion: Llenado Aleatorio] [Valor: A=497853, B=473379]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 3] [Posicion: 27] [Operacion: Llenado Aleatorio] [Valor: A=937480, B=705385]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 3] [Posicion: 35] [Operacion: Llenado Aleatorio] [Valor: A=591235, B=620995]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 22] [Operacion: Llenado Aleatorio] [Valor: A=694260, B=720115]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 4] [Posicion: 28] [Operacion: Llenado Aleatorio] [Valor: A=824042, B=955616]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 12] [Operacion: Llenado Aleatorio] [Valor: A=270977, B=490193]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 7] [Posicion: 39] [Operacion: Llenado Aleatorio] [Valor: A=137483, B=170975]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 7] [Posicion: 31] [Operacion: Llenado Aleatorio] [Valor: A=483728, B=739013]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 18] [Operacion: Llenado Aleatorio] [Valor: A=921135, B=703301]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 2] [Posicion: 13] [Operacion: Llenado Aleatorio] [Valor: A=624949, B=289724]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 20] [Operacion: Llenado Aleatorio] [Valor: A=807698, B=469884]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 5] [Posicion: 37] [Operacion: Llenado Aleatorio] [Valor: A=364359, B=637809]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 14] [Operacion: Llenado Aleatorio] [Valor: A=157539, B=740424]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 2] [Posicion: 26] [Operacion: Llenado Aleatorio] [Valor: A=50918, B=938802]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 1] [Posicion: 19] [Operacion: Llenado Aleatorio] [Valor: A=150815, B=285430]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 0] [Posicion: 9] [Operacion: Llenado Aleatorio] [Valor: A=241353, B=87901]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 1] [Posicion: 33] [Operacion: Llenado Aleatorio] [Valor: A=301759, B=604180]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 3] [Posicion: 23] [Operacion: Llenado Aleatorio] [Valor: A=534411, B=487253]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 10] [Operacion: Llenado Aleatorio] [Valor: A=384415, B=723610]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Hilo OpenMP: 1] [Posicion: 25] [Operacion: Llenado Aleatorio] [Valor: A=164356, B=172219]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 2] [Posicion: 21] [Operacion: Llenado Aleatorio] [Valor: A=342613, B=886342]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 3] [Posicion: 15] [Operacion: Llenado Aleatorio] [Valor: A=300395, B=374284]
+[TIEMPO GLOBAL] Llenar Aleatorio | N=40 | MPI_Wtime: 0.014697 s
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 16] [Operacion: Llenado Aleatorio] [Valor: A=34573, B=936718]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Hilo OpenMP: 4] [Posicion: 36] [Operacion: Llenado Aleatorio] [Valor: A=477797, B=387578]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Hilo OpenMP: 1] [Posicion: 11] [Operacion: Llenado Aleatorio] [Valor: A=433151, B=688812]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Hilo OpenMP: 0] [Posicion: 17] [Operacion: Llenado Aleatorio] [Valor: A=959017, B=200870]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 1
+
+1) N = 40 (muestra todo)
+2) N = 4,000,000 (solo tiempos)
+3) Otro tamano
+Seleccione (1-3): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-799999] [Operacion: Crear Arreglos] [Valor: 800000 elementos]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 7
+[TIEMPO GLOBAL] Llenar Aleatorio | N=4000000 | MPI_Wtime: 0.021926 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 2
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Maestro genera A y B globales] [Valor: aleatorio]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 800000-1599999] [Operacion: MPI_Send bloque A y B hacia nodo 1] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 1600000-2399999] [Operacion: MPI_Send bloque A y B hacia nodo 2] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 2400000-3199999] [Operacion: MPI_Send bloque A y B hacia nodo 3] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 3200000-3999999] [Operacion: MPI_Send bloque A y B hacia nodo 4] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 800000-1599999] [Operacion: MPI_Recv parcial de C desde nodo 1] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 1600000-2399999] [Operacion: MPI_Recv parcial de C desde nodo 2] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 2400000-3199999] [Operacion: MPI_Recv parcial de C desde nodo 3] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 3200000-3999999] [Operacion: MPI_Recv parcial de C desde nodo 4] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Suma de verificacion de C global] [Valor: 3998548291349]
+[TIEMPO GLOBAL] Suma [Send/Recv] | N=4000000 | MPI_Wtime: 8.014640 s
+[TIEMPO COMUNICACION] Distribucion: 5.905917 s | Recopilacion: 2.066032 s | Total: 7.971949 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 2
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 3
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Maestro genera A y B globales] [Valor: aleatorio]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-799999] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-799999] [Operacion: MPI_Gather envia parcial de C] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Suma de verificacion de C global] [Valor: 4000246234101]
+[TIEMPO GLOBAL] Suma [Scatter/Gather] | N=4000000 | MPI_Wtime: 11.140499 s
+[TIEMPO COMUNICACION] Distribucion: 7.754289 s | Recopilacion: 3.351454 s | Total: 11.105742 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 3
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Maestro genera A y B globales] [Valor: aleatorio]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 800000-1599999] [Operacion: MPI_Send bloque A y B hacia nodo 1] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 1600000-2399999] [Operacion: MPI_Send bloque A y B hacia nodo 2] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 2400000-3199999] [Operacion: MPI_Send bloque A y B hacia nodo 3] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 3200000-3999999] [Operacion: MPI_Send bloque A y B hacia nodo 4] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 800000-1599999] [Operacion: MPI_Recv parcial de C desde nodo 1] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 1600000-2399999] [Operacion: MPI_Recv parcial de C desde nodo 2] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 2400000-3199999] [Operacion: MPI_Recv parcial de C desde nodo 3] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 3200000-3999999] [Operacion: MPI_Recv parcial de C desde nodo 4] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Suma de verificacion de C global] [Valor: 1847159370]
+[TIEMPO GLOBAL] Resta [Send/Recv] | N=4000000 | MPI_Wtime: 8.229876 s
+[TIEMPO COMUNICACION] Distribucion: 6.131006 s | Recopilacion: 2.067050 s | Total: 8.198056 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 3
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 3
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Maestro genera A y B globales] [Valor: aleatorio]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-799999] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-799999] [Operacion: MPI_Gather envia parcial de C] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Suma de verificacion de C global] [Valor: 493518863]
+[TIEMPO GLOBAL] Resta [Scatter/Gather] | N=4000000 | MPI_Wtime: 10.552338 s
+[TIEMPO COMUNICACION] Distribucion: 7.241008 s | Recopilacion: 3.278233 s | Total: 10.519241 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 4
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Maestro genera A y B globales] [Valor: aleatorio]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 800000-1599999] [Operacion: MPI_Send bloque A y B hacia nodo 1] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 1600000-2399999] [Operacion: MPI_Send bloque A y B hacia nodo 2] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 2400000-3199999] [Operacion: MPI_Send bloque A y B hacia nodo 3] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 3200000-3999999] [Operacion: MPI_Send bloque A y B hacia nodo 4] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 800000-1599999] [Operacion: MPI_Recv parcial de C desde nodo 1] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 1600000-2399999] [Operacion: MPI_Recv parcial de C desde nodo 2] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 2400000-3199999] [Operacion: MPI_Recv parcial de C desde nodo 3] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 3200000-3999999] [Operacion: MPI_Recv parcial de C desde nodo 4] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Suma de verificacion de C global] [Valor: 999744939846117632.00]
+[TIEMPO GLOBAL] Multiplicacion [Send/Recv] | N=4000000 | MPI_Wtime: 8.086252 s
+[TIEMPO COMUNICACION] Distribucion: 5.653473 s | Recopilacion: 2.394656 s | Total: 8.048129 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 4
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 3
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Maestro genera A y B globales] [Valor: aleatorio]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-799999] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-799999] [Operacion: MPI_Gather envia parcial de C] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Suma de verificacion de C global] [Valor: 999806920453172480.00]
+[TIEMPO GLOBAL] Multiplicacion [Scatter/Gather] | N=4000000 | MPI_Wtime: 10.474643 s
+[TIEMPO COMUNICACION] Distribucion: 7.370030 s | Recopilacion: 3.071307 s | Total: 10.441337 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 5
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Maestro genera A y B globales] [Valor: aleatorio]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 800000-1599999] [Operacion: MPI_Send bloque A y B hacia nodo 1] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 1600000-2399999] [Operacion: MPI_Send bloque A y B hacia nodo 2] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 2400000-3199999] [Operacion: MPI_Send bloque A y B hacia nodo 3] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 3200000-3999999] [Operacion: MPI_Send bloque A y B hacia nodo 4] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 800000-1599999] [Operacion: MPI_Recv parcial de C desde nodo 1] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 1600000-2399999] [Operacion: MPI_Recv parcial de C desde nodo 2] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 2400000-3199999] [Operacion: MPI_Recv parcial de C desde nodo 3] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 3200000-3999999] [Operacion: MPI_Recv parcial de C desde nodo 4] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Suma de verificacion de C global] [Valor: 1333374816372362240.00]
+[TIEMPO GLOBAL] Cuadrado [Send/Recv] | N=4000000 | MPI_Wtime: 7.789359 s
+[TIEMPO COMUNICACION] Distribucion: 5.851503 s | Recopilacion: 1.906359 s | Total: 7.757863 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 5
+
+Version de comunicacion:
+  1) Local (usa A y B locales ya llenados)
+  2) Punto a punto (MPI_Send / MPI_Recv)
+  3) Colectiva (MPI_Scatter / MPI_Gather)
+Seleccione (1-3): 3
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Maestro genera A y B globales] [Valor: aleatorio]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-799999] [Operacion: MPI_Scatter recibe bloque A y B] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-799999] [Operacion: MPI_Gather envia parcial de C] [Valor: 800000 elementos]
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-3999999] [Operacion: Suma de verificacion de C global] [Valor: 1333106924707634176.00]
+[TIEMPO GLOBAL] Cuadrado [Scatter/Gather] | N=4000000 | MPI_Wtime: 10.138267 s
+[TIEMPO COMUNICACION] Distribucion: 7.041555 s | Recopilacion: 3.064734 s | Total: 10.106289 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 8
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Sumatoria Global (MPI_Reduce, solo nodo 0)] [Valor: 1999840288984]
+[TIEMPO GLOBAL] Sumatoria [MPI_Reduce] | N=4000000 | MPI_Wtime: 0.008967 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 8
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 1999840288984]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 1999840288984]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 1999840288984]
+[TIEMPO GLOBAL] Sumatoria [MPI_Allreduce] | N=4000000 | MPI_Wtime: 0.008556 s
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 1999840288984]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Operacion: Sumatoria Global (MPI_Allreduce)] [Valor: 1999840288984]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 9
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Promedio Global (MPI_Reduce, solo nodo 0)] [Valor: 499960.07]
+[TIEMPO GLOBAL] Promedio [MPI_Reduce] | N=4000000 | MPI_Wtime: 0.007852 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 9
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 499960.07]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 499960.07]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 499960.07]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 499960.07]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Operacion: Promedio Global (MPI_Allreduce)] [Valor: 499960.07]
+[TIEMPO GLOBAL] Promedio [MPI_Allreduce] | N=4000000 | MPI_Wtime: 0.008721 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 10
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Maximo Global (MPI_Reduce, solo nodo 0)] [Valor: 1000000]
+[TIEMPO GLOBAL] Maximo [MPI_Reduce] | N=4000000 | MPI_Wtime: 0.008719 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 10
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 1000000]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 1000000]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 1000000]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 1000000]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Operacion: Maximo Global (MPI_Allreduce)] [Valor: 1000000]
+[TIEMPO GLOBAL] Maximo [MPI_Allreduce] | N=4000000 | MPI_Wtime: 0.010202 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 11
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 1
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Minimo Global (MPI_Reduce, solo nodo 0)] [Valor: 1]
+[TIEMPO GLOBAL] Minimo [MPI_Reduce] | N=4000000 | MPI_Wtime: 0.009553 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 11
+
+Funcion de reduccion:
+  1) MPI_Reduce (resultado solo en el nodo 0)
+  2) MPI_Allreduce (resultado en todos los nodos)
+Seleccione (1 o 2): 2
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 3] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+[Equipo: DESKTOP-C9F9T9F] [Proceso MPI: 4] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 1] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+[Equipo: DESKTOP-NRB8997] [Proceso MPI: 2] [Operacion: Minimo Global (MPI_Allreduce)] [Valor: 1]
+[TIEMPO GLOBAL] Minimo [MPI_Allreduce] | N=4000000 | MPI_Wtime: 0.009088 s
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 12
+[Equipo: CarlosHP] [Proceso MPI: 0] [Operacion: Finalizando nodo] [Valor: Equipo CarlosHP]
+==============================================
+COMUNICACION HIBRIDA MPI + OPENMP FINALIZADA
+==============================================
+EQUIPO: Hermosillo Prado Carlos | Montes de Oca del Risco Rafael Alejandro | Ramirez Andrade Uriel Ismael Guadalupe
+
+C:\MPI\Proyecto_MPI>

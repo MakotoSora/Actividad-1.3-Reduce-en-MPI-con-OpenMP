@@ -1,0 +1,1 @@
+[Equipo: CarlosHP] [Proceso MPI: 4] [Posicion: 32-39] [Operacion: Crear Arreglos] [Valor: 8 elementos]

@@ -1,0 +1,23 @@
+EQUIPO: Hermosillo Prado Carlos | Montes de Oca del Risco Rafael Alejandro | Ramirez Andrade Uriel Ismael Guadalupe
+==============================================
+PRACTICA 1.3: REDUCE EN MPI CON OPENMP
+Procesos MPI: 5 | Hilos OpenMP por proceso: 8
+==============================================
+[Equipo: CarlosHP] [Proceso MPI: 0] [Posicion: 0-7] [Operacion: Crear Arreglos] [Valor: 8 elementos]
+
+==========================================
+        MENU DE OPERACIONES MPI + OPENMP
+==========================================
+1. Crear arreglos
+2. Sumar arreglos
+3. Restar arreglos
+4. Multiplicar arreglos
+5. Calcular el cuadrado de un arreglo
+6. Llenar secuencial
+7. Llenar aleatorio
+8. Sumatoria
+9. Promedio
+10. Maximo
+11. Minimo
+12. Salir
+Seleccione una opcion: 
